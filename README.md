@@ -1,0 +1,3 @@
+# Yammy
+
+## Server project
