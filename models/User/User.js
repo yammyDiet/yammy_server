@@ -32,9 +32,6 @@ module.exports = class User extends Sequelize.Model {
         password: {
           type: Sequelize.STRING(128),
           allowNull: false,
-          validate: {
-            is: /^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,}$/,
-          },
         },
         name: {
           type: Sequelize.STRING(100),
