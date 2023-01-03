@@ -5,7 +5,7 @@ module.exports = class User extends Sequelize.Model {
     return super.init(
       {
         //컬럼 설정
-        Userid: {
+        userId: {
           type: Sequelize.STRING(100),
           allowNull: false,
           unique: true,
@@ -48,9 +48,9 @@ module.exports = class User extends Sequelize.Model {
           type: Sequelize.INTEGER,
           allowNull: false,
         },
-        KakaoLogin: {
+        kakaoLogin: {
           type: Sequelize.BOOLEAN,
-          allowNull: false,
+          allowNull: true,
         },
       },
       {
