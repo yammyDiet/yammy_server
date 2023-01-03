@@ -1,26 +1,26 @@
 {
   "development": {
-    "username": "adam",
+    "username": "root",
     "password": "1234",
     "database": "yammy",
-    "host": "192.168.0.25",
-    "port": 3305,
+    "host": "192.168.0.27",
+    "port": 3306,
     "dialect": "mysql"
   },
   "test": {
-    "username": "adam",
+    "username": "root",
     "password": "1234",
     "database": "yammy",
-    "host": "192.168.0.25",
-    "port": 3305,
+    "host": "192.168.0.27",
+    "port": 3306,
     "dialect": "mysql"
   },
   "production": {
-    "username": "adam",
+    "username": "root",
     "password": "1234",
     "database": "yammy",
-    "host": "192.168.0.25",
-    "port": 3305,
+    "host": "192.168.0.27",
+    "port": 3306,
     "dialect": "mysql"
   }
 }
