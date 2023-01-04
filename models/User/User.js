@@ -65,10 +65,10 @@ module.exports = class User extends Sequelize.Model {
   static associate(db) {
     //테이블 간의 관계 설정
     //1:N일 경우 hasMany(), belongsTO() 활용
-    // db.User.hasMany(db.Search, {
-    //   foreignKey: "fk_user_search",
-    //   sourceKey: "userid",
-    // });
+    db.User.hasMany(db.Search, {
+      foreignKey: "fk_user_search",
+      sourceKey: "userId",
+    });
     // db.User.hasMany(db.Diet, {
     //   foreignKey: "fk_user_diet",
     //   sourceKey: "userid",
