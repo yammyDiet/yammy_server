@@ -31,9 +31,16 @@ sequelize
 
 app.use("/", homeRouter);
 
-// 에러 미들웨어
+// 에러 미들웨어(페이지 없음)
+app.use((req,res,next)=>{
+  res.status(404).json({result:"Error", message:"없는 페이지입니다"})
+  next(createError(404));
+})
+
+// 에러 미들웨어(예외적 오류)
 app.use((err, req, res, next) => {
-  console.log(err);
+  console.error(err.stack);
+  res.status(500).json({result:"Error", message:"Server Error!!!"})
 });
 
 // 앱 실행
