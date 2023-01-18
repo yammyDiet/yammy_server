@@ -6,38 +6,54 @@ module.exports = class ApiData extends Sequelize.Model {
       {
         //컬럼 설정
         foodId: {
-          type: Sequelize.INTEGER,
+          type: Sequelize.STRING(256),
           allowNull: false,
           primaryKey: true,
         },
         foodName: {
-          type: Sequelize.CHAR(200),
+          type: Sequelize.STRING(256),
           allowNull: false,
         },
-        foodGroup: {
-            type: Sequelize.CHAR(200),
+        foodBigGroup: {
+            type: Sequelize.STRING(256),
             allowNull: false,
           },
+          foodSmallGroup: {
+            type: Sequelize.STRING(256),
+            allowNull: false,
+          },
+          supply:{
+            type:Sequelize.TEXT,
+            allowNull:false,
+          },
           calorie: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.TEXT,
             allowNull: false,
           },
           fat: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.TEXT,
             allowNull: false,
           },
           carbonhydrate: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.TEXT,
             allowNull: false,
           },
-          protin: {
-            type: Sequelize.INTEGER,
+          protein: {
+            type: Sequelize.TEXT,
             allowNull: false,
           },
           natrium: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.TEXT,
             allowNull: false,
           },
+          sugar:{
+            type: Sequelize.TEXT,
+            allowNull: false,
+          },
+          calcium:{
+            type: Sequelize.INTEGER,
+            allowNull: false,
+          }
       },
       {
         //테이블 설정
