@@ -1,0 +1,31 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+  background-color: aquamarine;
+}
+.box1{
+  float: left;
+}
+.login_box {
+  color: #ffffff;
+  background: #7dcb9a;
+  font-size: 1.2em;
+  padding: 0.7em 3em;
+  margin-right: 0.1em;
+  float: right;
+  margin-left: auto;
+  display: flex;
+  float: right;
+
+
+}
+
+a:hover{
+  color:black;
+}
+a {text-decoration: none;}
+
+
+

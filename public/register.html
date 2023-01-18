@@ -8,15 +8,14 @@
   </head>
   <body>
     <form method="post">
-      id, email, password, name, gender, age, image 순으로 입력<br />
-      <input type="text" name="id" required /><br />
-      <input type="email" name="email" required /><br />
-      <input type="password" name="password" min="8" required /><br />
-      <input type="text" name="name" required /><br />
+      id<input type="text" name="id" required /><br />
+      email<input type="email" name="email" required /><br />
+      password<input type="password" name="password" min="8" required /><br />
+      name<input type="text" name="name" required /><br />
       <fieldset>
-        <legend>성별 선택:</legend>
+        gender<legend>성별 선택:</legend>
         <div>
-          <input type="checkbox" name="gender" value="남자" checked />
+           <input type="checkbox" name="gender" value="남자" checked />
           <label for="gender">남자</label>
         </div>
         <div>
@@ -24,8 +23,8 @@
           <label for="gender">여자</label>
         </div>
       </fieldset>
-      <input type="text" name="age" required /><br />
-      <input type="text" name="image" required /><br />
+      age<input type="text" name="age" required /><br />
+      image<input type="text" name="image" required /><br />
       <input type="submit" value="버튼" />
     </form>
     <a href="/register">이동</a>
