@@ -18,7 +18,7 @@ const dietEvent = {
                if(txt === "\n") {
                 arr.push(result); //이미지 텍스트 추출 배열로 삽입
                 result="";
-        }
+        } 
                }
                // 이미지에서 추출한 텍스트를 배열에 저장해서
                //저장한 데이터를 순회하여 DB 탐색
